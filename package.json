@@ -12,7 +12,8 @@
     "preview": "vite preview",
     "db:seed": "node --import ./dev/register.mjs dev/seed-local.mjs",
     "db:reset": "node --input-type=module -e \"import fs from 'node:fs'; fs.rmSync('.data',{recursive:true,force:true}); console.log('local database cleared')\"",
-    "templates": "node dev/make-templates.mjs"
+    "templates": "node dev/make-templates.mjs",
+    "smoke": "node dev/smoke-local.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.99.1",
